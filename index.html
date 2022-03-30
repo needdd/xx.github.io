@@ -20,20 +20,21 @@
             justify-content: center;
             align-items: center;
         }
-        
+
         h2 {
             font-size: 220%;
             font-weight: 400;
         }
-        
+
         .content {
-            
+
             position: absolute;
             width: 100%;
             top: 30%;
             transform: translate(0, -50%);
             text-align: center;
         }
+
         /* .content b {
             font-size: 20px !important;
         } */
@@ -42,10 +43,11 @@
             line-height: 1.5;
             margin: 1em 0;
         }
-        
+
         .timer b {
             color: rgb(253, 99, 125);
         }
+
         .top {
             z-index: -1;
             position: absolute;
@@ -54,57 +56,64 @@
             width: 550px;
             background: url(./img/before.png) no-repeat;
         }
+
         .bot {
-            
+
             height: 350px;
             width: 550px;
             background: url(./img/after.png) no-repeat;
         }
+
         .box {
-            
+
             transform: scale(5);
             transform: rotate(60deg);
 
             margin-top: 300px;
             height: 400px;
             width: 550px;
-            display: flex; 
+            display: flex;
             /* flex-direction: column; */
             justify-content: center;
             align-items: center;
-            position: relative; 
+            position: relative;
             /* overflow: hidden; */
             animation: ainm forwards 2s .2s;
         }
+
         .ka {
             position: absolute;
-            top: 170px;
+            top: 200px;
             left: 70px;
             z-index: -1;
             background-color: rgb(224, 144, 144);
-            height: 100px;
+            height: 30px;
             width: 400px;
             /* transition: all 2s; */
             border-radius: 30px;
         }
+
         .ka {
             animation: ain forwards 2s .8s;
-            
+
         }
+
         @keyframes ain {
             to {
                 height: 400px;
-                transform: translateY(-300px);
-                
+                transform: translateY(-330px);
+
             }
         }
+
         @keyframes ainm {
             to {
                 transform: rotate(0deg);
                 transform: scale(.7);
-                
+
             }
         }
+
         .xx {
             position: relative;
             position: absolute;
@@ -117,9 +126,13 @@
             align-items: center;
             /* background-color: black; */
         }
-        .x1,.x2,.x3 {
+
+        .x1,
+        .x2,
+        .x3 {
             background-color: #be1e1e;
         }
+
         .x2 {
             position: absolute;
             top: 5px;
@@ -129,6 +142,7 @@
             border-radius: 50%;
             /* background-color: #0b2a3a; */
         }
+
         .x1 {
             height: 50px;
             width: 50px;
@@ -137,6 +151,7 @@
             /* background-color: #0b2a3a; */
 
         }
+
         .x3 {
             position: absolute;
             top: 5px;
@@ -159,22 +174,23 @@
         </div>
         <div class="top"></div>
         <div class="ka">
- <div class="content">
-        <h2>陈康林&张星蕊</h2>
-        <div class="timer">
-            <b id="d"></b> 天 <b id="h"></b> 小时 <b id="m"></b> 分钟 <b id="s"></b> 秒
-        </div>
-    </div>
+            <div class="content">
+                <h2>陈康林&&张星蕊</h2>
+                <div class="timer">
+                    <b id="d"></b> 天 <b id="h"></b> 小时 <b id="m"></b> 分钟 <b id="s"></b> 秒
+                    <p>爱你的老公</p>
+                </div>
+            </div>
         </div>
         <div class="bot"></div>
     </div>
 
 
-   
+
     <script src="jquery.js"></script>
     <script language="javascript">
-         function timer() {
-            var start = new Date(2020,9, 14); // 2015.7.2
+        function timer() {
+            var start = new Date(2020, 9, 14); // 2015.7.2
             var t = new Date() - start;
             var h = ~~(t / 1000 / 60 / 60 % 24);
             if (h < 10) {
@@ -194,12 +210,12 @@
             document.getElementById('m').innerHTML = m;
             document.getElementById('s').innerHTML = s;
         }
-        
+
         timer();
-        setInterval("timer()",1000);
+        setInterval("timer()", 1000);
 
     </script>
-   
+
 
 </body>
 
